@@ -254,16 +254,28 @@
         </div>
 
         <div class="contact-grid">
-            <form id="contact-form" class="card form" aria-labelledby="contactFormTitle">
+            <form id="contact-form"
+                class="card form"
+                action="https://formspree.io/f/mnnayngl"
+                method="POST" novalidate>
             <h3 id="contactFormTitle" class="sr-only">Contact form</h3>
+
+            <!-- Honeypot anti-spam, keep hidden -->
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none">
+
+            <!-- Optional subject shown in your inbox -->
+            <input type="hidden" name="_subject" value="Voice over enquiry from website">
+
             <label>
                 <span>Name</span>
-                <input type="text" name="name" required placeholder="Your name" />
+                <input type="text" name="name" required placeholder="Your name">
             </label>
+
             <label>
                 <span>Email</span>
-                <input type="email" name="email" required placeholder="you@example.com" />
+                <input type="email" name="email" required placeholder="you@example.com">
             </label>
+
             <label>
                 <span>Project type</span>
                 <select name="type" required>
@@ -276,16 +288,23 @@
                 <option>Other</option>
                 </select>
             </label>
+
             <label>
                 <span>Message</span>
                 <textarea name="message" rows="6" required placeholder="Tell me about your script, tone, audience, and length."></textarea>
             </label>
+            
             <div class="form-actions">
                 <button type="submit" class="btn">Send</button>
-                <button type="button" id="copy-email" class="btn btn-ghost" data-email="voice@keirajarvis.com">Copy email</button>
+                <button type="button" id="copy-email" class="btn btn-ghost" data-email="Keira.Jarvis@hotmail.co.uk">Copy email</button>
             </div>
-            <p class="hint">This form opens your email client with a prefilled message. Or copy the address and send directly.</p>
-            </form>
+
+            <p class="hint">I usually reply the same day for short scripts.</p>
+
+            <!-- Status message -->
+            <p id="form-status" class="hint" role="status" aria-live="polite"></p>
+        </form> 
+
 
             <aside class="card contact-aside">
             <h3>Direct booking</h3>
