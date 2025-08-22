@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Keira Jarvis — Voice Over Artist</title>
+    <meta name="description" content="Keira Jarvis. Professional voice over artist for corporate, character, impressions, audiobooks, and more. Wide range of accents and voices." />
+    <meta name="theme-color" content="#000000" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Keira Jarvis — Voice Over Artist" />
+    <meta property="og:description" content="Corporate. Character. Impressions. Audiobooks. Wide range and range of accents and voices." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'><rect width='100%25' height='100%25' fill='black'/><text x='50%25' y='52%25' fill='white' font-family='Inter,Arial,Helvetica,sans-serif' font-size='72' text-anchor='middle'>Keira Jarvis</text><text x='50%25' y='62%25' fill='white' font-family='Inter,Arial,Helvetica,sans-serif' font-size='28' text-anchor='middle'>Voice Over Artist</text></svg>" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Preload small system font stack safely with no external calls -->
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Keira Jarvis",
+        "jobTitle": "Voice Over Artist",
+        "description": "Professional voice over artist for corporate, character, impressions, and audiobooks.",
+        "knowsAbout": ["Corporate narration", "Character voices", "Impressions", "Audiobook narration", "Commercial voice over"],
+        "sameAs": [],
+        "url": ""
+    }
+    </script>
+    </head>
+    <body>
+    <!-- Sticky Header -->
+    <header class="site-header" data-shadow>
+        <div class="container header-inner">
+        <!-- Inline SVG Logo: wordmark + circular KJ monogram -->
+        <a href="#top" class="brand" aria-label="Home">
+            <svg id="kj-logo" class="logo" viewBox="0 0 480 120" role="img" aria-labelledby="logoTitle logoDesc">
+            <title id="logoTitle">Keira Jarvis logotype</title>
+            <desc id="logoDesc">Monochrome wordmark with a circular KJ monogram.</desc>
+
+            <!-- Monogram circle -->
+            <g transform="translate(10,10)">
+                <circle cx="50" cy="50" r="48" fill="#000" stroke="#fff" stroke-width="2"/>
+                <!-- K -->
+                <path d="M28 22 v56 h8 v-24 l22 24 h11 l-24 -26 24 -30 h-11 l-22 27 v-27 z" fill="#fff"/>
+                <!-- J -->
+                <path d="M80 22 v44 c0 10 -7 16 -20 16 c-9 0 -16 -3 -22 -8 l5 -7 c4 4 10 6 17 6 c8 0 12 -4 12 -11 v-40 h8 z" fill="#fff"/>
+            </g>
+
+            <!-- Wordmark -->
+            <g transform="translate(130,18)">
+                <text x="0" y="45" font-family="Inter, Arial, Helvetica, sans-serif" font-size="42" font-weight="700" fill="#000" letter-spacing="1">Keira</text>
+                <text x="0" y="95" font-family="Inter, Arial, Helvetica, sans-serif" font-size="42" font-weight="300" fill="#000" letter-spacing="1">Jarvis</text>
+            </g>
+            </svg>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+            <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">
+            <span class="sr-only">Menu</span>
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </button>
+            <ul id="primary-menu" class="nav-list">
+            <li><a href="#demo">Demo</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#contact" class="btn btn-ghost">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <main id="top">
+        <!-- Hero -->
+        <section class="hero container">
+        <div class="hero-text">
+            <h1><span class="hero-top">Voice Over Artist</span><br />Keira Jarvis</h1>
+            <p class="lead">Corporate. Character. Impressions. Audiobooks. Clear delivery and a wide range of accents and voices.</p>
+            <div class="cta-row">
+
+            <a href="#demo" class="btn">Play a demo</a>
+            
+            </div>
+        </div>
+        </section>
+
+        <!-- Demo -->
+        <section id="demo" class="section container">
+        <div class="section-head">
+            <h2>Demo</h2>
+            <p>Selected clips. One click to play. Use headphones for the best experience.</p>
+            <div class="demo-actions">
+            <button id="play-all" class="btn btn-ghost" type="button">Play all</button>
+            <button id="stop-all" class="btn btn-ghost" type="button">Stop all</button>
+            </div>
+        </div>
+
+        <div class="grid demos">
+            <!-- Corporate -->
+            <article class="card" data-animate>
+            <header class="card-head">
+                <h3>Corporate</h3>
+                <p class="muted">Warm, clear, credible</p>
+            </header>
+            <div class="player">
+                <audio preload="metadata">
+                <source src="./audio/Corporate_Voice_Reel.mp3" type="audio/mpeg" />
+                Your browser does not support audio. Download the file to listen.
+                </audio>
+                <div class="controls">
+                <button class="play" aria-label="Play corporate demo">Play</button>
+                <span class="time" aria-live="polite">0:00</span>
+                </div>
+            </div>
+            </article>
+
+            <!-- Character -->
+            <article class="card" data-animate>
+            <header class="card-head">
+                <h3>Character</h3>
+                <p class="muted">Distinct personas, strong choices</p>
+            </header>
+            <div class="player">
+                <audio preload="metadata">
+                <source src="./audio/Character_Voice_Reel.mp3" type="audio/mpeg" />
+                </audio>
+                <div class="controls">
+                <button class="play" aria-label="Play character demo">Play</button>
+                <span class="time" aria-live="polite">0:00</span>
+                </div>
+            </div>
+            </article>
+
+            <!-- Impressions -->
+            <article class="card" data-animate>
+            <header class="card-head">
+                <h3>Impressions</h3>
+                <p class="muted">Recognisable voices with polish</p>
+            </header>
+            <div class="player">
+                <audio preload="metadata">
+                <source src="./audio/Impression_Voices_Reel.mp3" type="audio/mpeg" />
+                </audio>
+                <div class="controls">
+                <button class="play" aria-label="Play impressions demo">Play</button>
+                <span class="time" aria-live="polite">0:00</span>
+                </div>
+            </div>
+            </article>
+
+            <!-- Audiobooks -->
+            <article class="card" data-animate>
+            <header class="card-head">
+                <h3>Audiobooks</h3>
+                <p class="muted">Narration with pace and clarity</p>
+            </header>
+            <div class="player">
+                <audio preload="metadata">
+                <source src="./audio/Audiobook_Voice_Reel.mp3" type="audio/mpeg" />
+                </audio>
+                <div class="controls">
+                <button class="play" aria-label="Play audiobooks demo">Play</button>
+                <span class="time" aria-live="polite">0:00</span>
+                </div>
+            </div>
+            </article>
+        </div>
+        </section>
+
+        <!-- Services -->
+        <section id="services" class="section container">
+        <div class="section-head">
+            <h2>Services</h2>
+            <p>Flexible studio or on site. Sessions by the hour or project.</p>
+        </div>
+
+        <div class="grid services">
+            <article class="tile" data-animate>
+            <h3>Corporate and e‑learning</h3>
+            <p>Company explainers, internal comms, compliance, and training modules. Friendly, confident, and concise.</p>
+            </article>
+            <article class="tile" data-animate>
+            <h3>Commercial</h3>
+            <p>Radio, television, online, and social spots. Bright, memorable reads with clean articulation.</p>
+            </article>
+            <article class="tile" data-animate>
+            <h3>Character</h3>
+            <p>Games and animation. Bold choices, consistent delivery, and clear direction taking.</p>
+            </article>
+            <article class="tile" data-animate>
+            <h3>Impressions</h3>
+            <p>Recognisable voices and parodies for sketches and promos. Careful attention to rhythm and tone.</p>
+            </article>
+            <article class="tile" data-animate>
+            <h3>Audiobooks</h3>
+            <p>Long‑form narration with steady pacing and distinct character voices where needed.</p>
+            </article>
+            <article class="tile" data-animate>
+            <h3>Accents and range</h3>
+            <p>Wide variety of accents and styles. Ask for a custom sample that fits your brief.</p>
+            </article>
+        </div>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <img src="./images/cartoon_profile.png" alt="Cartoon portrait of Keira Jarvis" class="profile-img">
+            <p>
+            I am a versatile voice over artist specialising in corporate, character, impressions, and audiobooks. 
+            I deliver clear, engaging performances across a wide range of accents and voices.
+            </p>
+        </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section container">
+        <div class="section-head">
+            <h2>Contact</h2>
+            <p>Send your brief. I will reply with availability and a quote.</p>
+        </div>
+
+        <div class="contact-grid">
+            <form id="contact-form" class="card form" aria-labelledby="contactFormTitle">
+            <h3 id="contactFormTitle" class="sr-only">Contact form</h3>
+            <label>
+                <span>Name</span>
+                <input type="text" name="name" required placeholder="Your name" />
+            </label>
+            <label>
+                <span>Email</span>
+                <input type="email" name="email" required placeholder="you@example.com" />
+            </label>
+            <label>
+                <span>Project type</span>
+                <select name="type" required>
+                <option value="" disabled selected>Select one</option>
+                <option>Corporate</option>
+                <option>Commercial</option>
+                <option>Character</option>
+                <option>Impressions</option>
+                <option>Audiobook</option>
+                <option>Other</option>
+                </select>
+            </label>
+            <label>
+                <span>Message</span>
+                <textarea name="message" rows="6" required placeholder="Tell me about your script, tone, audience, and length."></textarea>
+            </label>
+            <div class="form-actions">
+                <button type="submit" class="btn">Send</button>
+                <button type="button" id="copy-email" class="btn btn-ghost" data-email="voice@keirajarvis.com">Copy email</button>
+            </div>
+            <p class="hint">This form opens your email client with a prefilled message. Or copy the address and send directly.</p>
+            </form>
+
+            <aside class="card contact-aside">
+            <h3>Direct booking</h3>
+            <p class="muted">Remote direction available by video link.</p>
+            <ul class="list">
+                <li><strong>Email</strong><br><a href="mailto:Keira.Jarvis@hotmail.co.uk">Keira.Jarvis@hotmail.co.uk</a></li>
+                <li><strong>Turnaround</strong><br>Fast for short scripts. Same day on request when possible.</li>
+                <li><strong>Delivery</strong><br>WAV or MP3. Clean, levelled, and labelled.</li>
+            </ul>
+            </aside>
+        </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> Keira Jarvis. All rights reserved.</p>
+        <a href="#top" class="back-to-top">Back to top</a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+</body>
+</html>
